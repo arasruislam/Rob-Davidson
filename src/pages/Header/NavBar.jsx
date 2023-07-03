@@ -9,7 +9,8 @@ const NavBar = () => {
           py="2"
           gap={[2, 4, 6, 8, 10]}
           fontWeight={"semibold"}
-          color={"#3C3C3C"}
+                color={"#3C3C3C"}
+                bg={'cyan.300'}
         >
           <Link>About</Link>
           <Link>Work</Link>

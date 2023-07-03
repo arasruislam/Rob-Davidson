@@ -1,6 +1,6 @@
 import { Button } from '@chakra-ui/react';
 
-const Primary_Button = () => {
+const Primary_Button = ({title}) => {
     return (
       <>
         <Button
@@ -19,7 +19,7 @@ const Primary_Button = () => {
           }
           _active={{ transform: "scale(0.95)" }}
         >
-          Hire Me
+          {title}
         </Button>
       </>
     );

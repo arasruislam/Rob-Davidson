@@ -13,7 +13,7 @@ import hero from "../../assets/hero.png";
 const Hero_Section = () => {
   return (
     <>
-      <Box>
+      <Box bg={"blackAlpha.300"}>
         <Flex
           flexDirection={{ base: "column-reverse", lg: "row" }}
           justifyContent={"space-between"}
@@ -41,13 +41,13 @@ const Hero_Section = () => {
               A full stack allaround designer that placerat in massa consectetur
             </Text>
             <Box mb={{ base: ".5rem", lg: "0" }}>
-              <Primary_Button />
+              <Primary_Button title={"Hire Me"} />
             </Box>
           </Box>
           {/* Spacer */}
           <Spacer />
           {/* Hero Section Right Content */}
-          <Box maxW={380} position={"relative"}>
+          <Box maxW={380}>
             <Image src={hero} alt="Hero Section Image" />
           </Box>
         </Flex>
