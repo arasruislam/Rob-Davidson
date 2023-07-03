@@ -4,8 +4,8 @@ import Primary_Button from "../../components/Buttons/Primary_Button";
 
 const About_Section = () => {
   return (
-    <>
-      <Box bg={"orange.200"}>
+    <div className="about" id="about">
+      <Box>
         <Flex
           flexDirection={{ base: "column", lg: "row" }}
           justifyContent={"space-between"}
@@ -39,7 +39,7 @@ const About_Section = () => {
           </Box>
         </Flex>
       </Box>
-    </>
+    </div>
   );
 };
 

@@ -19,12 +19,20 @@ const Contact_Section = () => {
       <Box mt={20} mb={12} maxW={"container.md"} mx={"auto"}>
         <Box
           bgGradient="linear(133deg, #5D69E9 0%, #4225B6 100%)"
-          px={12}
-          py={16}
+          px={{ base: 4, md: 8, lg: 12 }}
+          py={{ base: 6, md: 12, lg: 16 }}
           borderRadius={16}
         >
-          <Flex alignItems={"center"}>
-            <Heading color={"white"} size={"xl"} textTransform={"uppercase"}>
+          <Flex
+            alignItems={"center"}
+            flexDirection={{ base: "column", sm: "row" }}
+            gap={{ base: 2, sm: 0 }}
+          >
+            <Heading
+              color={"white"}
+              size={{ base: "sm", md: "md", lg: "xl" }}
+              textTransform={"uppercase"}
+            >
               Work Inquiry
             </Heading>
             <Spacer />

@@ -15,7 +15,7 @@ import project_3 from "../../assets/project-3.png";
 const Project_Section = () => {
   return (
     <>
-      <Box my={"3rem"} bg={"facebook.200"}>
+      <Box my={20}>
         <Heading
           size={{ base: "lg", md: "xl" }}
           textTransform="uppercase"

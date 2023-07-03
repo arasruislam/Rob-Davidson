@@ -13,14 +13,17 @@ import hero from "../../assets/hero.png";
 const Hero_Section = () => {
   return (
     <>
-      <Box bg={"blackAlpha.300"}>
+      <Box>
         <Flex
           flexDirection={{ base: "column-reverse", lg: "row" }}
           justifyContent={"space-between"}
           alignItems={"center"}
         >
           {/* Hero Section Left Content */}
-          <Box mt={{ base: "1.5rem", lg: "0" }}>
+          <Box
+            mt={{ base: "1.5rem", lg: "0" }}
+            alignSelf={{ md: "start", lg: "center" }}
+          >
             <Heading
               size={{ base: "3xl", md: "4xl" }}
               textTransform="uppercase"
