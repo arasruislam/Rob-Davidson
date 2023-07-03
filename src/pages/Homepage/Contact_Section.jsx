@@ -15,7 +15,7 @@ import icon_3 from "../../assets/icon-3.png";
 
 const Contact_Section = () => {
   return (
-    <>
+    <div className="contact" id="contact">
       <Box mt={20} mb={12} maxW={"container.md"} mx={"auto"}>
         <Box
           bgGradient="linear(133deg, #5D69E9 0%, #4225B6 100%)"
@@ -60,7 +60,7 @@ const Contact_Section = () => {
           </Box>
         </Box>
       </Box>
-    </>
+    </div>
   );
 };
 

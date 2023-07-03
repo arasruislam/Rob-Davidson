@@ -1,18 +1,14 @@
-import {
-  Box,
-  Flex,
-  Heading,
-  Icon,
-  Image,
-  Spacer,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Flex, Heading, Image, Spacer, Text } from "@chakra-ui/react";
 import Primary_Button from "../../components/Buttons/Primary_Button";
 import hero from "../../assets/hero.png";
+import useReval from "../../hooks/useReval";
 
 const Hero_Section = () => {
+  useReval("right", ".hero_image");
+  useReval("left", ".hero_content");
+
   return (
-    <>
+    <div className="home" id="home">
       <Box>
         <Flex
           flexDirection={{ base: "column-reverse", lg: "row" }}
@@ -23,6 +19,7 @@ const Hero_Section = () => {
           <Box
             mt={{ base: "1.5rem", lg: "0" }}
             alignSelf={{ md: "start", lg: "center" }}
+            className="hero_content"
           >
             <Heading
               size={{ base: "3xl", md: "4xl" }}
@@ -50,12 +47,12 @@ const Hero_Section = () => {
           {/* Spacer */}
           <Spacer />
           {/* Hero Section Right Content */}
-          <Box maxW={380}>
+          <Box maxW={380} className="hero_image">
             <Image src={hero} alt="Hero Section Image" />
           </Box>
         </Flex>
       </Box>
-    </>
+    </div>
   );
 };
 

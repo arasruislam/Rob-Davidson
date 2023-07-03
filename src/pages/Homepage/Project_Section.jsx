@@ -14,7 +14,7 @@ import project_3 from "../../assets/project-3.png";
 
 const Project_Section = () => {
   return (
-    <>
+    <div className="project" id="project">
       <Box my={20}>
         <Heading
           size={{ base: "lg", md: "xl" }}
@@ -98,7 +98,7 @@ const Project_Section = () => {
           </Grid>
         </Box>
       </Box>
-    </>
+    </div>
   );
 };
 
