@@ -1,5 +1,6 @@
 import Hero_Section from "./Hero_Section";
 import About_Section from "./About_Section";
+import Project_Section from "./Project_Section";
 
 const Homepage = () => {
   return (
@@ -12,6 +13,11 @@ const Homepage = () => {
       {/* About Section */}
       <section>
         <About_Section />
+      </section>
+
+      {/* Project Section */}
+      <section>
+        <Project_Section />
       </section>
     </>
   );
