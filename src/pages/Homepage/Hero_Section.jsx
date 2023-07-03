@@ -40,7 +40,7 @@ const Hero_Section = () => {
             <Text color={"#3E3E3E"}>
               A full stack allaround designer that placerat in massa consectetur
             </Text>
-            <Box mb={{ base: ".5rem", lg: "0" }}>
+            <Box mb={{ base: ".5rem", lg: "0" }} mt={"36px"}>
               <Primary_Button title={"Hire Me"} />
             </Box>
           </Box>

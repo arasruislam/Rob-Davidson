@@ -4,7 +4,7 @@ const Primary_Button = ({title}) => {
     return (
       <>
         <Button
-          mt={"36px"}
+
           py={6}
           px={8}
           transition={"all 0.3s"}
