@@ -1,5 +1,13 @@
+import Hero_Section from "./Hero_Section";
+
 const Homepage = () => {
-  return <div>hello world</div>;
+  return (
+    <>
+      <section>
+        <Hero_Section />
+      </section>
+    </>
+  );
 };
 
 export default Homepage;

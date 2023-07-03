@@ -1,10 +1,14 @@
+import { RouterProvider } from "react-router-dom";
+import { ChakraProvider } from "@chakra-ui/react";
+import router from "./Routes/Routes.jsx";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { RouterProvider } from "react-router-dom";
-import router from "./Routes/Routes.jsx";
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <>
-    <RouterProvider router={router} />
+    <ChakraProvider>
+      <RouterProvider router={router} />
+    </ChakraProvider>
   </>
 );
